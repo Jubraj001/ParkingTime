@@ -135,7 +135,7 @@ public class User_Reg extends AppCompatActivity implements View.OnClickListener{
                                             user_phone.setText("");
                                             user_username.setText("");
                                             user_password.setText("");
-                                            openUser_Dashboard();
+                                            openUser_Login();
                                         } else {
                                             Toast.makeText(User_Reg.this, "Failed To Register! Try Again!", Toast.LENGTH_LONG).show();
                                             progressBar.setVisibility(View.GONE);
@@ -161,8 +161,8 @@ public class User_Reg extends AppCompatActivity implements View.OnClickListener{
         }
 
     }
-    public void openUser_Dashboard(){
-        Intent intent= new Intent(this, User_Dashboard.class);
+    public void openUser_Login(){
+        Intent intent= new Intent(this, User_Login.class);
         startActivity(intent);
     }
 }
