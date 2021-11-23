@@ -3,12 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Jubraj Dev/AndroidStudioProjects/ParkingTime/app/src/main/res/drawable-v24/btn_bg.xml" value="0.2703125" />
-        <entry key="..\:/Users/Jubraj Dev/AndroidStudioProjects/ParkingTime/app/src/main/res/drawable-v24/input_bg.xml" value="0.2703125" />
-        <entry key="..\:/Users/Jubraj Dev/AndroidStudioProjects/ParkingTime/app/src/main/res/layout/activity_inst_dashboard.xml" value="0.264" />
-        <entry key="..\:/Users/Jubraj Dev/AndroidStudioProjects/ParkingTime/app/src/main/res/layout/activity_inst_login.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Jubraj Dev/AndroidStudioProjects/ParkingTime/app/src/main/res/layout/activity_inst_reg.xml" value="0.4" />
-        <entry key="..\:/Users/Jubraj Dev/AndroidStudioProjects/ParkingTime/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/ParkingTime/app/src/main/res/drawable-v24/btn_bg.xml" value="0.23703703703703705" />
+        <entry key="..\:/ParkingTime/app/src/main/res/drawable/ic_launcher_background.xml" value="0.12129629629629629" />
+        <entry key="..\:/ParkingTime/app/src/main/res/layout/activity_inst_dashboard.xml" value="0.264" />
+        <entry key="..\:/ParkingTime/app/src/main/res/layout/activity_inst_login.xml" value="0.264" />
+        <entry key="..\:/ParkingTime/app/src/main/res/layout/activity_inst_profile.xml" value="0.264" />
+        <entry key="..\:/ParkingTime/app/src/main/res/layout/activity_inst_reg.xml" value="0.2" />
+        <entry key="..\:/ParkingTime/app/src/main/res/layout/activity_inst_settings.xml" value="0.264" />
+        <entry key="..\:/ParkingTime/app/src/main/res/layout/activity_main.xml" value="0.24947916666666667" />
+        <entry key="..\:/ParkingTime/app/src/main/res/layout/activity_user_dashboard.xml" value="0.46647230320699706" />
+        <entry key="..\:/ParkingTime/app/src/main/res/layout/activity_user_login.xml" value="0.264" />
+        <entry key="..\:/ParkingTime/app/src/main/res/layout/activity_user_profile.xml" value="0.2" />
+        <entry key="..\:/ParkingTime/app/src/main/res/layout/activity_user_reg.xml" value="0.264" />
+        <entry key="..\:/ParkingTime/app/src/main/res/layout/activity_user_settings.xml" value="0.264" />
+        <entry key="..\:/ParkingTime/app/src/main/res/layout/card_holder.xml" value="0.264" />
+        <entry key="..\:/ParkingTime/app/src/main/res/layout/fragment_inst__parking__status.xml" value="0.25" />
+        <entry key="..\:/ParkingTime/app/src/main/res/layout/fragment_inst__profile.xml" value="0.264" />
+        <entry key="..\:/ParkingTime/app/src/main/res/layout/fragment_inst__settings.xml" value="0.25" />
+        <entry key="..\:/ParkingTime/app/src/main/res/layout/toolbar.xml" value="0.24635416666666668" />
+        <entry key="..\:/ParkingTime/app/src/main/res/layout/user_menu.xml" value="0.1" />
+        <entry key="..\:/ParkingTime/app/src/main/res/menu/inst_menu.xml" value="0.1" />
+        <entry key="..\:/ParkingTime/app/src/main/res/menu/user_menu.xml" value="0.2" />
       </map>
     </option>
   </component>

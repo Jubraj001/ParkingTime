@@ -11,6 +11,7 @@
         android:id="@+id/reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
         android:text="LOGIN"
         android:textColor="#ECE2E2"
         android:textSize="34sp"

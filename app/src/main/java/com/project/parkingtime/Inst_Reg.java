@@ -28,14 +28,15 @@ public class Inst_Reg extends AppCompatActivity {
     private Button register;
     private EditText InstName, InstCity, InstState, InstSlot, InstPassword, InstMoney, InstEmail;
     private ProgressBar progressBar;
-    int slot,price;
+    private int slot,price;
+    public int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inst_reg);
         mAuth = FirebaseAuth.getInstance();
 //      mUser= mAuth.getCurrentUser();
-        InstName=(EditText) findViewById(R.id.inpInstName);
+        InstName= (EditText) findViewById(R.id.inpInstName);
         InstCity=(EditText) findViewById(R.id.inpInstCity);
         InstState=(EditText) findViewById(R.id.inpInstState);
         InstSlot=(EditText) findViewById(R.id.inpInstSlot);
@@ -104,7 +105,7 @@ public class Inst_Reg extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()) {
-                                        Inst_Data inst_data = new Inst_Data(name, city, state, slot, price, email);
+                                        Inst_Data inst_data = new Inst_Data(name, city, state, slot, price, email, password, count);
 
                                         FirebaseDatabase.getInstance().getReference("Institution")
                                                 .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
@@ -121,30 +122,21 @@ public class Inst_Reg extends AppCompatActivity {
                                                     InstEmail.setText("");
                                                     InstPassword.setText("");
                                                     InstMoney.setText("");
-                                                    openInst_Dashboard();
+                                                    openInstlogin();
+//                                                    openInst_Dashboard();
                                                 } else {
                                                     Toast.makeText(Inst_Reg.this, "Failed to register! Try again!", Toast.LENGTH_LONG).show();
                                                     progressBar.setVisibility(View.GONE);
-                                                    InstName.setText("");
-                                                    InstCity.setText("");
-                                                    InstState.setText("");
-                                                    InstSlot.setText("");
                                                     InstEmail.setText("");
                                                     InstPassword.setText("");
-                                                    InstMoney.setText("");
                                                 }
                                             }
                                         });
                                     } else {
                                         Toast.makeText(Inst_Reg.this, "Failed to register! Try again!", Toast.LENGTH_LONG).show();
                                         progressBar.setVisibility(View.GONE);
-                                        InstName.setText("");
-                                        InstCity.setText("");
-                                        InstState.setText("");
-                                        InstSlot.setText("");
                                         InstEmail.setText("");
                                         InstPassword.setText("");
-                                        InstMoney.setText("");
                                     }
                                 }
                             });
@@ -156,9 +148,9 @@ public class Inst_Reg extends AppCompatActivity {
         Intent intent= new Intent(this, Inst_Login.class);
         startActivity(intent);
     }
-    public void openInst_Dashboard()
-    {
-        Intent intent = new Intent(this,Inst_Dashboard.class);
-        startActivity(intent);
-    }
+//    public void openInst_Dashboard()
+//    {
+//        Intent intent = new Intent(this,Inst_Dashboard.class);
+//        startActivity(intent);
+//    }
 }
